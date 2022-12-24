@@ -42,6 +42,9 @@
                 <div class="col-12 col-sm align-self-center">
                     <img src="/img/logo.png" class="img-fluid">
                 </div>
+                <div class="col-12 col-sm align-self-center">
+                    <a class="btn btn-warning" href="#botao"><strong>Reserve Table</strong></a>
+                </div>
             </div>
         </div>
     </header>
@@ -55,8 +58,8 @@
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="/img/uthappizza.png" alt="uthappizza">
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza</h2>
-                        <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
             </div>
@@ -69,11 +72,11 @@
             </div>
             <div class="col col-sm col-md">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="/img/buffet.png" alt="buffet">
                     <div class="media-body">
-                        <h2 class="mt-0">Weekend Grand Buffet</h2>
-                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                     </div>
+                    <img class="d-flex ml-3 img-thumbnail align-self-center" src="/img/buffet.png" alt="buffet">
                 </div>
             </div>
         </div>
@@ -81,17 +84,53 @@
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
-            </div class="col col-sm order-sm-first col-md">
-            <div class="media">
-                <img class="d-flex mr-3 img-thumbnail align-self-center" src="/img/perfil-azul.png" alt="perfil" height="105" width="105">
-                <div class="media-body">
-                    <h2 class="mt-0">Alberto Somayya</h2>
-                    <h4>Executive Chef</h4>
-                    <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+            </div>
+            <div class="col col-sm order-sm-first col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="/img/perfil-azul.png" alt="perfil" height="105" width="105">
+                    <div class="media-body">
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
+    <div class="row row-content align-items-center" id="botao">
+        <div class="col-12 col-sm-8 offset-sm-2">
+            <div class="card">
+                <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-12 col-sm-2"><p>Number of Guests</p></dt>
+                        <dd class="col-12 col-sm-10">
+                            <input type="radio" id="1" name="1" value="1">
+                            <label class="mr-2" for="1">1</label>
+                            <input type="radio" id="2" name="2" value="2">
+                            <label class="mr-2" for="2">2</label>
+                            <input type="radio" id="3" name="3" value="3">
+                            <label class="mr-2" for="3">3</label>
+                            <input type="radio" id="4" name="4" value="4">
+                            <label class="mr-2" for="4">4</label>
+                            <input type="radio" id="5" name="5" value="5">
+                            <label class="mr-2" for="5">5</label>
+                            <input type="radio" id="6" name="6" value="6">
+                            <label for="6">6</label>
+                        </dd>
+                        <dt class="col-12 col-sm-2">Data and Time</dt>
+                        <dd class="col-12 col-sm-10">
+                            <input class="mr-3" type="text" placeholder="Date" id="date" name="date">
+                            <input type="text" placeholder="Time" id="time" name="time">
+                        </dd>
+                        <dt class=" offset-sm-2 col-10"><button class="mt-4 btn btn-primary text-white" type="submit"><strong>Reserve</strong></button></dt>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <footer class="footer">
         <div class="container">

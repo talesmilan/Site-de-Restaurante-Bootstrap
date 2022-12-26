@@ -76,6 +76,70 @@
         </div>
     </div>
 
+    
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a Table</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-12 col-sm-2">Number of Guests</div>
+                            <div class="col-12 col-sm-9">
+                                <input type="radio" id="1" name="1" value="1">
+                                <label class="mr-2" for="1">1</label>
+                                <input type="radio" id="2" name="2" value="2">
+                                <label class="mr-2" for="2">2</label>
+                                <input type="radio" id="3" name="3" value="3">
+                                <label class="mr-2" for="3">3</label>
+                                <input type="radio" id="4" name="4" value="4">
+                                <label class="mr-2" for="4">4</label>
+                                <input type="radio" id="5" name="5" value="5">
+                                <label class="mr-2" for="5">5</label>
+                                <input type="radio" id="6" name="6" value="6">
+                                <label for="6">6</label>
+                            </div>
+                        </div>
+                        <div class="form-row mt-3">
+                            <br>
+                            <br>
+                            <div class="col-12 col-sm-2">Section</div>
+                            <div class="col-12 col-sm-8">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active btn-sm">
+                                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                                    </label>
+                                    <label class="btn btn-danger btn-sm">
+                                      <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                    </label>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="form-row mt-3">
+                            <div class="col-12 col-sm-2">Data and Time</div>
+                            <div class="col-12 col-sm-10">
+                                <input class="mr-3" type="text" placeholder="Date" id="date" name="date">
+                                <input type="text" placeholder="Time" id="time" name="time">
+                            </div>
+                        </div>
+                        <div class="form-row mt-5">
+                            <div class="offset-sm-2 col-10">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal"><strong>Cancel</strong></button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1"><strong>Reserve</strong></button> 
+                            </div>
+                                   
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -87,7 +151,7 @@
                     <img src="/img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a class="btn btn-warning btn-block nav-link" href="#botao" data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+852 12345678</strong>" data-placement="bottom"><strong>Reserve Table</strong></a>
+                    <a class="btn btn-warning btn-block nav-link" data-toggle="modal" data-target="#reserveModal"><strong>Reserve Table</strong></a>
                 </div>
             </div>
         </div>
@@ -209,7 +273,7 @@
                             <input class="mr-3" type="text" placeholder="Date" id="date" name="date">
                             <input type="text" placeholder="Time" id="time" name="time">
                         </dd>
-                        <dt class=" offset-sm-2 col-10"><button class="mt-4 btn btn-primary text-white" type="submit"><strong>Reserve</strong></button></dt>
+                        <dt class="offset-sm-2 col-10"><button class="mt-4 btn btn-primary text-white" type="submit"><strong>Reserve</strong></button></dt>
                     </dl>
                 </div>
             </div>
@@ -262,11 +326,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
+    <!--<script>
         $(document).ready(function() {
             $('[data-toggle="tooltip"]').tooltip();
         })
-    </script>
+    </script>-->
 </body>
 
 </html>
